@@ -1,0 +1,9 @@
+<div class="timeline">     
+  <div class="timeline-internship" ng-repeat="internship in internships"
+       popover-title="{{ internship.title }}"
+       uib-popover-template="internship.tpl" 
+       popover-is-open="showinternships"
+       popover-trigger="none"
+       popover-placement="{{ internship.placement }}">
+  </div>
+</div>
