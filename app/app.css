@@ -137,28 +137,28 @@ display:none !important}
 .intro-3
 {
 	height: 100vh;
-	background: url("https://i.pinimg.com/originals/56/17/2d/56172d7059b5a527bce0adca75ff6f18.gif");
+	background: url("../app/assets/img/projet.gif");
 	background-size: cover;
 }
 
 .intro-5
 {
 	height: 100vh;
-	background: url("https://cdn.dribbble.com/users/1152627/screenshots/4793102/dribbble_shot_paperpillar.png");
+	background: url("../app/assets/img/mission.png");
 	background-size: cover;
 }
 
 .intro-4
 {
 	height: 100vh;
-	background: url("https://cdn.dribbble.com/users/377275/screenshots/3918345/forbes_gif.gif");
+	background: url("../app/assets/img/report.gif");
 	background-size: cover;
 }
 
 .intro-2
 {
 	height: 100vh;
-	background: url("https://media1.giphy.com/media/26SdS6M9jzxdqq72JU/giphy.gif");
+	background: url("../app/assets/img/home.gif");
 	background-size: cover;
 }
 
