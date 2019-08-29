@@ -37,22 +37,5 @@ controller('AppController', ['$scope', '$location', 'localStorageService',
       $scope.showCookieAlert = false;
     }
 
-    // Every time the user changes the view, we must collapse the menu
-    $scope.$on('$routeChangeStart', function(){
-      $scope.isCollapsed = true;
-    });
-
-    // The cv sections only show if the showcv parameter is present, we store the preference in localStorage
-    // if this user returns typing the address he will find all the sections.
-    if (localStorageService.get('showcv') || $location.$$search.showcv === '1') {
-    
-      localStorageService.set('showcv', true);
-      $scope.employer = true;
-    
-    } else {
-    
-      $scope.employer = false;
-    
-    }
 
   }]);
