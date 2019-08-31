@@ -502,30 +502,6 @@ p
 	*/
 }
 
-/*=====DEMO=====*/
-/* Patreon*/
-.patreon
-{
-	width: 100%;
-	padding-top: 15px;
-	padding-bottom: 15px;
-	flex: none;
-	color: #222;
-	text-align: center;
-	background-color: #fffdee;
-}
-
-.patreon__container
-{
-	padding-left: 10px;
-	padding-right: 10px;
-}
-
-.patreon__link
-{
-	text-decoration: underline;
-	color: #ff4242;
-}
 
 .name-logo
 {
@@ -579,53 +555,12 @@ p
 	font-family: 'Montserrat', sans-serif;
 }
 
-.wrapper
-{
-	margin: 0;
-	padding: 0;
-	align-items: center;
-	justify-content: center;
-	height: 10vh;
-	font-size:55px;
-	display: block;
-}
 
 i
 {
 	padding: 0px 10px;
 }
 
-.wrapper i:nth-child(1)
-{
-	margin-top: 10px;
-	color: rgb(36, 40, 45);
-	cursor: pointer;
-	text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.4);
-	transition: all ease-in-out 150ms;
-}
-
-.wrapper i:nth-child(1):hover
-{
-	margin-top: 0px;
-	text-shadow: 0px 16px 10px rgba(0, 0, 0, 0.3);
-	transform: translate(0, -8);
-}
-
-.wrapper i:nth-child(2)
-{
-	margin-top: 10px;
-	color: rgb(181, 69, 159);
-	cursor: pointer;
-	text-shadow: 0px 7px 10px rgb(181, 69, 159);
-	transition: all ease-in-out 150ms;
-}
-
-.wrapper i:nth-child(2):hover
-{
-	margin-top: 0px;
-	text-shadow: 0px 16px 10px rgb(181, 69, 159);
-	transform: translate(0, -8);
-}
 
 .button_accueil
 {
@@ -748,32 +683,7 @@ footer
 	cursor: pointer;
 }
 
-.timeline
-{
-	top: 20px;
-	left: 50%;
-	height: 12  20px;
-	width: 4px;
-	background: #d7e4ed;
-	position: relative;
-}
 
-.timeline .timeline-internship
-{
-	width: 14px;
-	height: 14px;
-	border-radius: 7px;
-	background-color: rgb(8, 144, 255);
-	margin-left: -5px;
-	margin-top: 130px;
-	margin-bottom: 240px;
-}
-
-.timeline .popover
-{
-	width: 160px;
-	z-index: auto;
-}
 
 .more-info-icon
 {
@@ -1043,19 +953,6 @@ footer
 		-webkit-filter: grayscale(0);
 	}
 
-	@media (min-width: 768px)
-	{
-		.timeline .timeline-internship
-		{
-			margin-bottom: 140px;
-			margin-top: 90px;
-		}
-
-		.timeline .popover
-		{
-			width: 275px;
-		}
-	}
 
 	@media print
 	{
@@ -1075,33 +972,4 @@ footer
 			display: none;
 		}
 
-		.timeline
-		{
-			top: 10px;
-			left: 10px;
-			width: 100%;
-			margin: 0px;
-			background: #d7e4ed;
-		}
-
-		.timeline .timeline-internship
-		{
-			margin: 0px;
-			position:relative;
-			width: 100%;
-		}
-
-		.timeline .popover
-		{
-			width: 100%;
-			max-width: 100%;
-			margin: 0px;
-			position: relative;
-			z-index: auto;
-		}
-
-		.timeline .popover.left .arrow, .timeline .popover.right .arrow
-		{
-			display: none;
-		}
 	}
