@@ -3,7 +3,7 @@
 angular.module('myApp.home', ['ngRoute'])
 
     .config(['$routeProvider', function($routeProvider) {
-        $routeProvider.when('/about', {
+        $routeProvider.when('/', {
             templateUrl: 'app/views/about/about.html',
         });
     }]);

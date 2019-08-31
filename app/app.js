@@ -20,7 +20,7 @@ config(['$locationProvider', '$routeProvider', 'localStorageServiceProvider',
 
         $locationProvider.hashPrefix('!');
         $routeProvider.otherwise({
-            redirectTo: '/about'
+            redirectTo: '/'
         });
 
         localStorageServiceProvider
