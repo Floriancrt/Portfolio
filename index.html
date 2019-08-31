@@ -17,67 +17,59 @@
 
     <body ng-controller="AppController">
         <nav class="navbar navbar-expand-sm fixed-top navbar-light scrolling-navbar top-nav-collapse">
-            <div class="container">
-                <a class="navbar-brand" href="#!/">FC</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbar1">
-                    <ul class="navbar-nav">
-                        <li class="nav-item" ng-class="{active: ($location.path() == '/parcours')}">
-                            <a class="nav-link" href="#!/parcours">Parcours</a>
-                        </li>
-                        <li class="nav-item" ng-class="{active: ($location.path() == '/projets')}">
-                            <a class="nav-link">Projets</a>
-                            <ul class="nav-dropdown">
-                                    <li class="nav-item">
-                                            <a href="#!/projets" class="nav-link">Home</a>
-                                    </li>
-                              <li class="nav-item">
-                                <a href="#" class="nav-link">GSB WEB</a>
-                              </li>
-                              <li class="nav-item">
-                                <a href="#" class="nav-link">GSB Matériel</a>
-                              </li>
-                              <li class="nav-item">
-                                <a href="#" class="nav-link">Remontées Mécaniques</a>
-                              </li>
-                            </ul>
-                          </li>
-
+            <label for="show-menu" class="show-menu">Florian COURTHIEU</label>
+            <input type="checkbox" id="show-menu" role="button">
+            <ul id="menu">
+                <li class="nav-item">
+                    <a href="#!/" class="navbar-brand">FC</a>
+                </li>
+                <li class="nav-item" ng-class="{active: ($location.path() == '/parcours')}">
+                    <a class="nav-link" href="#!/parcours">Parcours</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">Missions</a>
+                    <ul class="hidden">
                         <li class="nav-item" ng-class="{active: ($location.path() == '/missions')}">
-                            <a class="nav-link">Mission</a>
-                            <ul class="nav-dropdown">
-                            <li class="nav-item">
-                                    <a href="#!/missions" class="nav-link">Home</a>
-                            </li>
-                              <li class="nav-item">
-                                <a href="#" class="nav-link">Stage EDF</a>
-                              </li>
-                              <li class="nav-item">
-                                <a href="#" class="nav-link">Stage Altsysnet</a>
-                              </li>
-                            </ul>
-                          </li>
-
-                        <li class="nav-item" ng-class="{active: ($location.path() == '/veille-technologique')}">
-                            <a class="nav-link" href="#!/veille-technologique">Veille</a>
+                            <a href="#!/missions" class="nav-link">Home</a>
                         </li>
-                          
-                    </ul>
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#"></a>
+                        <li>
+                            <a href="#" class="nav-link">Stage EDF</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link">Stage Altsysnet</a>
                         </li>
                     </ul>
-                </div>
-            </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">Projets</a>
+                    <ul class="hidden">
+                        <li class="nav-item" ng-class="{active: ($location.path() == '/projets')}">
+                            <a href="#!/projets" class="nav-link">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link">GSB Matériel</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link">GSB WEB</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link">Remontées Mécaniques</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item" ng-class="{active: ($location.path() == '/veille-technologique')}">
+                    <a class="nav-link" href="#!/veille-technologique">Veille</a>
+                </li>
+            </ul>
         </nav>
+
         <div ng-view>
         </div>
+
         <footer class="container">
             <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/" target="_blank"><img alt="Licence Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/3.0/fr/80x15.png" /></a><br />Ce(tte) œuvre est mise à disposition selon les termes de la <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/" target="_blank">Licence Creative Commons Attribution - Pas d’Utilisation Commerciale - Pas de Modification 3.0 France</a>.
         </footer>
+        
         <script src="./app/bower_components/angular/angular.min.js"></script>
         <script src="./app/bower_components/angular-animate/angular-animate.js"></script>
         <script src="./app/bower_components/angular-route/angular-route.js"></script>
