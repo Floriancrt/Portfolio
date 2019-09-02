@@ -3,22 +3,22 @@
 angular.module('myApp.mission', ['ngRoute'])
 
     .config(['$routeProvider', function($routeProvider) {
-        $routeProvider.when('/missions', {
+        $routeProvider
+        .when('/missions', 
+        {
             templateUrl: 'app/views/missions/mission.html',
-            controller: 'OssCtrl'
+        })
+        .when('/missions/EDF',
+        {
+            templateUrl: 'app/views/missions/EDF/stage-EDF.html'
+        })
+        .when('/mission/Altsysnet',
+        {
+            templateUrl: 'app/views/missions/Altsysnet/stage-Altsysnet.html'
         });
     }])
 
-    .controller('OssCtrl', ['$scope', function($scope) {
 
-    }])
 
-    .directive('highlight', function() {
-        return {
-            restrict: 'A',
-            link: function(scope, element) {
-                console.log(element);
-                hljs.highlightBlock(element[0]);
-            }
-        }
-    });
+
+   

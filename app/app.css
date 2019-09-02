@@ -38,6 +38,144 @@
 
 
 
+
+
+
+  *, *:before, *:after{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing:border-box;
+	box-sizing: border-box;
+  }
+  
+  
+  
+  .main-title{
+	color: #2d2d2d;
+	text-align: center;
+	text-transform: capitalize;
+	padding: 0.7em 0;
+  }
+  
+  .contain{
+	padding: 1em 0;
+	float: left;
+	width: 50%;
+  }
+  @media screen and (max-width: 640px){
+	.contain{
+	  display: block;
+	  width: 100%;
+	}
+  }
+  
+  @media screen and (min-width: 900px){
+	.contain{
+	  width: 100%;
+	}
+  }
+  
+  .contain .title{
+	color: #1a1a1a;
+	text-align: center;
+	margin-bottom: 10px;
+  }
+  
+  .content {
+	position: relative;
+	width: 90%;
+	max-width: 900px;
+	margin: auto;
+	overflow: hidden;
+  }
+  
+  .content .content-overlay {
+	background: rgba(2,59,165,0.7);
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	opacity: 0;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+  }
+  
+  .content:hover .content-overlay{
+	opacity: 1;
+  }
+  
+  .content-image{
+	width: 100%;
+  }
+  
+  .content-details {
+	position: absolute;
+	text-align: center;
+	padding-left: 1em;
+	padding-right: 1em;
+	width: 100%;
+	top: 50%;
+	left: 50%;
+	opacity: 0;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	-moz-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;
+  }
+  
+  .content:hover .content-details{
+	top: 50%;
+	left: 50%;
+	opacity: 1;
+  }
+  
+  .content-details h4{
+	color: #fff;
+	font-weight: 500;
+	letter-spacing: 0.15em;
+	margin-bottom: 0.5em;
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+  }
+  
+  .content-details p{
+	color: #fff;
+	font-size: 0.8em;
+  }
+  
+  .fadeIn-bottom{
+	top: 80%;
+  }
+  
+  .fadeIn-top{
+	top: 20%;
+  }
+  
+  .fadeIn-left{
+	left: 20%;
+  }
+  
+  .fadeIn-right{
+	left: 80%;
+  }
+
+
+
+
+
+
+
+
+
+
+
   ul {
     list-style-type:none;
     margin:0;
@@ -300,7 +438,7 @@ display:none !important}
 .intro-5
 {
 	height: 100vh;
-	background: url("../app/assets/img/mission.png");
+	background: url("../app/assets/img/mission.gif");
 	background-size: cover;
 }
 
@@ -315,6 +453,20 @@ display:none !important}
 {
 	height: 100vh;
 	background: url("../app/assets/img/home.gif");
+	background-size: cover;
+}
+
+.intro-6
+{
+	height: 100vh;
+	background: url("../app/assets/img/logo-gsb.png") no-repeat center;
+	background-size: cover;
+}
+
+.intro-7
+{
+	height: 100vh;
+	background: url("../app/assets/img/logo-EDF.png") no-repeat center;
 	background-size: cover;
 }
 
@@ -560,6 +712,34 @@ i
 {
 	padding: 0px 10px;
 }
+
+
+
+.button_EDF
+{
+	background-color: white;
+	color: rgb(0, 26, 112);
+	font-size: 25px;
+	margin: 0 auto;
+	transition: 0.3s;
+	padding: 5px 10px 5px 10px;
+	border: 2px solid rgb(0, 26, 112);
+	font-family: 'Montserrat', sans-serif;
+}
+
+.button_EDF:hover
+{
+	background-color: rgb(0, 26, 112);
+	color: white;
+	border-radius: 10px 10px 10px 10px;
+}
+
+.button_EDF:focus
+{
+	outline:0 !important;
+}
+
+
 
 
 .button_accueil
