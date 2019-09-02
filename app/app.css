@@ -381,6 +381,16 @@ vertical-align:middle}
 	text-shadow: 6px 6px #9fb7cb;
 }
 
+.heading_project_EDF
+{
+	text-shadow: 6px 6px #f1471d;
+}
+
+.heading_project_Altsysnet
+{
+	text-shadow: 6px 6px #55ba49;
+}
+
 .heading_mission
 {
 	text-shadow: 6px 6px #281bc1;
@@ -467,7 +477,12 @@ display:none !important}
 {
 	height: 100vh;
 	background: url("../app/assets/img/logo-EDF.png") no-repeat center;
-	background-size: cover;
+}
+
+.intro-8
+{
+	height: 100vh;
+	background: url("../app/assets/img/logo-Altsysnet.png")no-repeat center;
 }
 
 .navbar.scrolling-navbar
